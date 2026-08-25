@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magma Industrial Supply Ltd. | Concrete Precast Joint Mold Ring</title>
+  <meta name="description" content="Concrete precast industry products from Magma Industrial Supply Ltd. Durable, reliable construction and industrial solutions from British Columbia, Canada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#0b2f66;
+      --blue2:#123f83;
+      --red:#d83b32;
+      --ink:#172235;
+      --muted:#667085;
+      --line:#e7ebf0;
+      --soft:#f5f7fa;
+      --white:#fff;
+      --shadow:0 18px 55px rgba(16,32,58,.10);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:#fff;
+      font-family:Inter,Arial,sans-serif;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1160px,92%);margin:auto}
+    .topbar{
+      background:var(--blue);
+      color:#fff;
+      font-size:13px;
+      padding:8px 0;
+    }
+    .topbar .inner{display:flex;justify-content:flex-end;gap:24px;flex-wrap:wrap}
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px;
+    }
+    .logo{display:block;max-width:310px;width:clamp(190px,28vw,310px)}
+    .logo img{display:block;width:100%;height:auto}
+    .navlinks{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600}
+    .navlinks a{position:relative;padding:30px 0}
+    .navlinks a:after{
+      content:"";position:absolute;left:0;bottom:20px;width:0;height:2px;
+      background:var(--red);transition:.25s
+    }
+    .navlinks a:hover:after,.navlinks a.active:after{width:100%}
+    .nav-cta{
+      background:var(--red);color:#fff!important;padding:12px 18px!important;border-radius:8px;
+      box-shadow:0 8px 18px rgba(216,59,50,.18)
+    }
+    .nav-cta:after{display:none}
+    .menu{display:none;background:none;border:0;font-size:26px;color:var(--blue)}
+
+    .crumbs{padding:18px 0;color:var(--muted);font-size:13px}
+    .crumbs span{color:var(--blue);font-weight:600}
+
+    .hero{
+      background:linear-gradient(135deg,#f7f9fc 0%,#fff 65%);
+      padding:56px 0 72px;
+      border-bottom:1px solid var(--line);
+    }
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;
+      color:var(--red);margin-bottom:16px
+    }
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--red)}
+    h1{
+      font-family:"Roboto Slab",Georgia,serif;
+      font-size:clamp(36px,5vw,62px);line-height:1.08;margin:0 0 20px;color:var(--blue)
+    }
+    .lead{font-size:18px;color:#526074;max-width:620px;margin:0 0 30px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      min-height:48px;padding:0 22px;border-radius:8px;font-weight:700;font-size:14px;
+      transition:.2s;border:1px solid transparent
+    }
+    .btn-primary{background:var(--blue);color:#fff}
+    .btn-primary:hover{background:var(--blue2);transform:translateY(-1px)}
+    .btn-outline{border-color:#cfd6df;color:var(--blue);background:#fff}
+    .btn-outline:hover{border-color:var(--blue)}
+
+    .product-card{
+      background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;
+      box-shadow:var(--shadow)
+    }
+    .main-image{
+      height:440px;border-radius:18px;background:#f7f7f7;overflow:hidden;
+      display:flex;align-items:center;justify-content:center
+    }
+    .main-image img{width:100%;height:100%;object-fit:contain;display:block}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    .thumb{
+      height:92px;border:1px solid var(--line);border-radius:10px;background:#fafafa;
+      overflow:hidden;cursor:pointer;padding:0
+    }
+    .thumb.active{border:2px solid var(--red)}
+    .thumb img{width:100%;height:100%;object-fit:cover}
+    .thumb.zoom img{transform:scale(1.8)}
+    .thumb.profile img{transform:scale(1.35) translateX(-7%)}
+
+    .section{padding:86px 0}
+    .section-soft{background:var(--soft)}
+    .section-head{max-width:760px;margin:0 auto 45px;text-align:center}
+    .section-head .kicker{
+      color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:12px
+    }
+    .section-head h2{
+      font-family:"Roboto Slab",Georgia,serif;color:var(--blue);
+      font-size:clamp(30px,4vw,44px);margin:9px 0 12px;line-height:1.15
+    }
+    .section-head p{margin:0;color:var(--muted)}
+
+    .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .panel{
+      background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;
+    }
+    .panel h3{margin:0 0 12px;color:var(--blue);font-size:21px}
+    .panel p{margin:0;color:var(--muted)}
+    .specs{width:100%;border-collapse:collapse;margin-top:18px}
+    .specs td{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}
+    .specs td:first-child{font-weight:700;color:var(--blue);width:42%}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .feature{
+      padding:28px;background:#fff;border:1px solid var(--line);border-radius:16px;
+      transition:.2s
+    }
+    .feature:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .icon{
+      width:46px;height:46px;border-radius:12px;background:#eef3fa;color:var(--blue);
+      display:grid;place-items:center;font-weight:800;margin-bottom:18px
+    }
+    .feature h3{font-size:17px;margin:0 0 8px}
+    .feature p{font-size:14px;color:var(--muted);margin:0}
+
+    .categories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .category{
+      padding:25px 22px;border:1px solid var(--line);border-radius:15px;background:#fff;
+      position:relative;overflow:hidden
+    }
+    .category:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--red)}
+    .category h3{margin:0 0 8px;font-size:16px;color:var(--blue)}
+    .category p{margin:0;color:var(--muted);font-size:13px}
+
+    .cta{
+      background:var(--blue);color:#fff;padding:58px 0;
+    }
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .cta h2{font-family:"Roboto Slab",Georgia,serif;margin:0 0 8px;font-size:34px}
+    .cta p{margin:0;color:#dce5f4;max-width:700px}
+    .cta .btn{background:#fff;color:var(--blue)}
+
+    footer{background:#0a2349;color:#cdd7e6;padding:48px 0 20px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px}
+    .footer-logo{width:250px;filter:brightness(0) invert(1);margin-bottom:18px}
+    footer h4{color:#fff;margin:0 0 14px}
+    footer p,footer a{font-size:13px;color:#cdd7e6}
+    footer a{display:block;margin:7px 0}
+    .copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:18px;font-size:12px;color:#9fb0c8}
+
+    @media(max-width:900px){
+      .navlinks{display:none}
+      .menu{display:block}
+      .hero-grid{grid-template-columns:1fr;gap:35px}
+      .main-image{height:390px}
+      .features{grid-template-columns:1fr 1fr}
+      .categories{grid-template-columns:1fr 1fr}
+      .info-grid{grid-template-columns:1fr}
+      .cta-inner{flex-direction:column;align-items:flex-start}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .topbar .inner{justify-content:center;gap:12px}
+      .nav{min-height:70px}
+      .hero{padding:38px 0 48px}
+      .main-image{height:300px}
+      .features,.categories,.footer-grid{grid-template-columns:1fr}
+      .section{padding:60px 0}
+      h1{font-size:40px}
+      .lead{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container inner">
+      <span>+1 (778) 929 3020</span>
+      <span>info@magmasupply.com</span>
+      <span>British Columbia, Canada</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="Magma Industrial Supply Ltd.">
+        <img src="assets/logo.png" alt="Magma Industrial Supply Ltd.">
+      </a>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#product">Product</a>
+        <a href="#details">Details</a>
+        <a href="#categories">Products</a>
+        <a href="#contact" class="nav-cta">Enquire Now</a>
+      </nav>
+      <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="container crumbs">Home <b> / </b> Concrete Precast Industry Products <b> / </b> <span>Joint Mold Ring</span></div>
+
+    <section class="hero" id="product">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Concrete Precast Industry Products</div>
+          <h1>Concrete Precast Joint Mold Ring</h1>
+          <p class="lead">
+            A clean, industrial product presentation for Magma Industrial Supply Ltd.,
+            focused on durable construction and precast solutions without displaying pricing.
+          </p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="mailto:info@magmasupply.com?subject=Enquiry%20-%20Concrete%20Precast%20Joint%20Mold%20Ring">Request an Enquiry</a>
+            <a class="btn btn-outline" href="#details">View Product Details</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="main-image">
+            <img id="mainProductImage" src="assets/concrete-precast-joint-mold-ring.jpg" alt="Concrete precast joint mold ring">
+          </div>
+          <div class="gallery">
+            <button class="thumb active" onclick="setView('normal', this)" aria-label="Standard product view">
+              <img src="assets/concrete-precast-joint-mold-ring.jpg" alt="">
+            </button>
+            <button class="thumb zoom" onclick="setView('zoom', this)" aria-label="Close-up product view">
+              <img src="assets/concrete-precast-joint-mold-ring.jpg" alt="">
+            </button>
+            <button class="thumb profile" onclick="setView('profile', this)" aria-label="Profile product view">
+              <img src="assets/concrete-precast-joint-mold-ring.jpg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Product Overview</div>
+          <h2>Built for precise precast work</h2>
+          <p>Present the product clearly, with the practical information customers need before sending an enquiry.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="panel">
+            <h3>Product Information</h3>
+            <p>
+              The Concrete Precast Joint Mold Ring is presented as part of Magma's
+              concrete precast industry product range. The layout keeps the focus on
+              the product, its construction use, and a simple enquiry path.
+            </p>
+            <table class="specs">
+              <tr><td>Product</td><td>Concrete Precast Joint Mold Ring</td></tr>
+              <tr><td>Application</td><td>Concrete / precast industry</td></tr>
+              <tr><td>Product type</td><td>Joint mold ring</td></tr>
+              <tr><td>Pricing</td><td>Available on enquiry</td></tr>
+            </table>
+          </div>
+
+          <div class="panel">
+            <h3>Why choose Magma</h3>
+            <p>
+              Magma Supply is based in Langley Township, British Columbia, Canada,
+              and focuses on durable, reliable construction and industrial products.
+              Its range serves construction, precast, water works and traffic-control
+              applications.
+            </p>
+            <div class="buttons" style="margin-top:24px">
+              <a class="btn btn-primary" href="https://magmasupply.com/" target="_blank" rel="noopener">Visit Magma Supply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Key Benefits</div>
+          <h2>Simple. Strong. Industrial.</h2>
+          <p>A cleaner product-page structure designed for B2B buyers and enquiries.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <div class="icon">01</div>
+            <h3>Precast Focus</h3>
+            <p>Position the ring clearly within the concrete precast industry product range.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">02</div>
+            <h3>Professional Presentation</h3>
+            <p>Large product imagery, restrained colours and clear hierarchy keep attention on the product.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">03</div>
+            <h3>Easy Enquiry</h3>
+            <p>No pricing section. Buyers can request product information directly from the page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Magma Product Range</div>
+          <h2>Explore related categories</h2>
+          <p>Selected categories from Magma Supply's current product navigation.</p>
+        </div>
+        <div class="categories">
+          <div class="category">
+            <h3>Concrete Precast</h3>
+            <p>Products supporting concrete precast industry applications.</p>
+          </div>
+          <div class="category">
+            <h3>Concrete Formwork</h3>
+            <p>Formwork accessories designed for efficient concrete pouring and construction.</p>
+          </div>
+          <div class="category">
+            <h3>Cedar Fence Accessories</h3>
+            <p>Durable fence hardware and accessories under the Fencefit range.</p>
+          </div>
+          <div class="category">
+            <h3>Water Works Accessories</h3>
+            <p>Keys and accessories for water works professionals under Aquafit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-inner">
+        <div>
+          <h2>Need product information?</h2>
+          <p>Contact Magma Industrial Supply Ltd. for product details, availability and an enquiry.</p>
+        </div>
+        <a class="btn" href="mailto:info@magmasupply.com?subject=Product%20Enquiry%20-%20Magma%20Industrial%20Supply">Contact Magma</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo.png" alt="Magma Industrial Supply Ltd.">
+        <p>Construction and industrial products for construction, precast, water works and related applications.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#details">Details</a>
+        <a href="#categories">Product Categories</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>2585, 216 St, Langley Twp,<br>BC, V2Z 1P4, Canada</p>
+        <p>+1 (778) 929 3020<br>info@magmasupply.com</p>
+      </div>
+    </div>
+    <div class="container copyright">
+      © 2026 Magma Industrial Supply Ltd. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    function setView(type, button){
+      const image = document.getElementById('mainProductImage');
+      image.style.objectFit = type === 'normal' ? 'contain' : 'cover';
+      image.style.transform = type === 'zoom' ? 'scale(1.45)' : type === 'profile' ? 'scale(1.18) translateX(-5%)' : 'scale(1)';
+      document.querySelectorAll('.thumb').forEach(el => el.classList.remove('active'));
+      button.classList.add('active');
+    }
+    function toggleMenu(){
+      const nav = document.querySelector('.navlinks');
+      const open = nav.style.display === 'flex';
+      nav.style.display = open ? '' : 'flex';
+      if(!open){
+        nav.style.position='absolute';
+        nav.style.top='70px';
+        nav.style.left='4%';
+        nav.style.right='4%';
+        nav.style.background='#fff';
+        nav.style.flexDirection='column';
+        nav.style.padding='16px 20px';
+        nav.style.border='1px solid #e7ebf0';
+        nav.style.borderRadius='12px';
+        nav.style.boxShadow='0 15px 35px rgba(16,32,58,.12)';
+      }
+    }
+  </script>
+</body>
+</html>
