@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Magma</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+ 
+</head>
+
+<body class="index-page">
+<style>
+
+.icon-bar{
+position:fixed;
+right:25px;
+bottom:120px;
+
+display:flex;
+flex-direction:column;
+gap:12px;
+z-index:9999;
+}
+
+.icon-bar a{
+width:56px;
+height:56px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#025ba5;
+color:#fff;
+box-shadow:0 12px 25px rgba(2,91,165,.35);
+transition:.35s;
+}
+
+.icon-bar a:hover{
+transform:translateY(-4px) scale(1.08);
+background:#014b88;
+}
+
+</style>
+
+<div class="icon-bar">
+
+  <a href="https://api.whatsapp.com/send?phone=+17789293020" class="whatsapp"><i class="bi bi-whatsapp"></i></a> 
+
+  <a href="tel:+17789293020" class="phone"><i class="bi bi-phone"></i></a> 
+
+  <a href="mailto:info@magmasupply.com" class="envelope"><i class="bi bi-envelope"></i></a> 
+
+</div>
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container position-relative header-inner">
+
+      <a href="index.html" class="logo-wrap d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo 
+         <img src="assets/img/logo/logo.png" alt=""> -->
+		 <img src="assets/img/logo/logo-main.png" alt="" style="width: 120px;"> 
+        
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+		   <li><a href="about.html">About</a></li>
+		       <li class="dropdown"><a href="ourproducts.html"><span>Our Products </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#product-range" data-filter="Concrete Precast Joint Mold Ring">Concrete Precast Joint Mold Ring</a></li>
+                  <li><a href="#product-range" data-filter="TMT Frames/Rings">TMT Frames/Rings</a></li>
+                  <li><a href="#product-range" data-filter="Concrete Reinforcement Wire &amp; Mesh">Concrete Reinforcement Wire &amp; Mesh</a></li>
+                  <li><a href="#product-range" data-filter="Lid Handle">Lid Handle</a></li>
+                  <li><a href="#product-range" data-filter="Manhole Ladder Rung">Manhole Ladder Rung</a></li>
+                  <li><a href="#product-range" data-filter="Manhole Ladder Rung Setting Pin">Manhole Ladder Rung Setting Pin</a></li>
+                  <li><a href="#product-range" data-filter="Jacket Lock Assembly Complete">Jacket Lock Assembly Complete</a></li>
+                  <li><a href="#product-range" data-filter="Drainage Wall Head Grill &amp; Railing">Drainage Wall Head Grill &amp; Railing</a></li>
+                  <li><a href="#product-range" data-filter="Underground Chamber Vault Covers">Underground Chamber Vault Covers</a></li>
+                  <li><a href="#product-range" data-filter="T-Bar for Trench">T-Bar for Trench</a></li>
+                </ul>
+              </li>
+              
+				<li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div id="nav-search-full" class="nav-search-full" role="search">
+        <i class="bi bi-search nav-search-icon"></i>
+        <input type="search" id="nav-search-input" placeholder="Search products by name or code number..." aria-label="Search products by name or code">
+        <button type="button" id="nav-search-close" class="nav-search-close" aria-label="Clear search"><i class="bi bi-x-lg"></i></button>
+        <button type="button" id="nav-search-submit" class="nav-search-submit" aria-label="Search"><i class="bi bi-arrow-right"></i></button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Blog Hero Section -->
+    <section id="blog-hero" class="blog-hero section">
+      <div class="container-fluid p-0" data-aos="fade">
+		<div class="blog-hero-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 1000,
+              "effect": "fade",
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/1.jpg" alt="Concrete Precast Joint Mold Ring" class="img-fluid">
+               <div class="blog-hero-content">
+                  <span class="category">Precast Concrete Products</span>
+                  <h1>Concrete Precast Joint Mold Ring</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> MS Steel Casting, Grade A48</span>
+                    <span><i class="bi bi-check-circle"></i> Sizes 12" to 72"</span>
+                  </div>
+                  <p class="description">Achieve precise, secure joints in precast concrete structures. Supports Class 30 &amp; Class 40 steel casting and multiple tongue &amp; groove joint designs, with fully customized profiles available.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/2.jpg" alt="TMT Frames/Rings" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Precast Concrete Products</span>
+                  <h1>TMT Frames/Rings</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> Thermo-Mechanically Treated Steel</span>
+                    <span><i class="bi bi-check-circle"></i> Corrosion Resistant Finish</span>
+                  </div>
+                  <p class="description">Heavy-duty frames and rings formed from TMT steel for superior strength and stability, precision manufactured to meet demanding manhole and precast reinforcement standards.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/3.jpg" alt="Concrete Reinforcement Wire &amp; Mesh" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Reinforcement Products</span>
+                  <h1>Concrete Reinforcement Wire &amp; Mesh</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> Knurled &amp; Plain Steel Wire</span>
+                    <span><i class="bi bi-check-circle"></i> Spot-Welded Mesh</span>
+                  </div>
+                  <p class="description">Strengthen precast concrete elements with reinforcement wire and mesh available in multiple sizes and configurations, including fully customized sizing on request.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/4.jpg" alt="Lid Handle" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Manhole &amp; Access Covers</span>
+                  <h1>Lid Handle</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> Ergonomic Grip Design</span>
+                    <span><i class="bi bi-check-circle"></i> High Load-Bearing Strength</span>
+                  </div>
+                  <p class="description">A robust, ergonomically designed lid handle manufactured for reliable, long-lasting performance on manhole covers and precast lids.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/1.jpg" alt="Manhole Ladder Rung" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Manhole &amp; Access Covers</span>
+                  <h1>Manhole Ladder Rung</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> A36 Grade Steel, 3/4" Rod Dia</span>
+                    <span><i class="bi bi-check-circle"></i> Hot Dip Galvanized Finish</span>
+                  </div>
+                  <p class="description">Ensure safe, easy access to manholes with a sturdy, slip-resistant rung offering a reliable foothold for workers during maintenance and inspection tasks.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/2.jpg" alt="Manhole Ladder Rung Setting Pin" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Manhole &amp; Access Covers</span>
+                  <h1>Manhole Ladder Rung Setting Pin</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> EN8 Grade Steel Pin</span>
+                    <span><i class="bi bi-check-circle"></i> Precise Machining</span>
+                  </div>
+                  <p class="description">Simplify ladder rung installation with a precision-engineered setting pin that ensures accurate positioning and a secure, long-lasting attachment.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/3.jpg" alt="Jacket Lock Assembly Complete" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Underground Utility Products</span>
+                  <h1>Jacket Lock Assembly Complete</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> Tamper-Resistant Locking</span>
+                    <span><i class="bi bi-check-circle"></i> Complete, Ready-to-Install Assembly</span>
+                  </div>
+                  <p class="description">A complete jacket lock assembly engineered for secure closure of underground utility jackets and vaults, built for durability in demanding field conditions.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/4.jpg" alt="Drainage Wall Head Grill &amp; Railing" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Drainage Systems</span>
+                  <h1>Drainage Wall Head Grill &amp; Railing</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> Safety Screening</span>
+                    <span><i class="bi bi-check-circle"></i> Fall-Protection Railing</span>
+                  </div>
+                  <p class="description">Wall head grills and railings designed to protect culvert and drainage channel openings, combining reliable safety screening with durable field performance.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/1.jpg" alt="Underground Chamber Vault Covers" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Underground Chamber Products</span>
+                  <h1>Underground Chamber Vault Covers</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> Secure, Durable Access</span>
+                    <span><i class="bi bi-check-circle"></i> Built for Harsh Environments</span>
+                  </div>
+                  <p class="description">Ensure safe, reliable access to underground chambers with robust vault covers that protect access points while allowing convenient entry for maintenance and inspection.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="blog-hero-item">
+                <img src="assets/img/hero-banner/2.jpg" alt="T-Bar for Trench" class="img-fluid">
+                <div class="blog-hero-content">
+                  <span class="category">Drainage Systems</span>
+                  <h1>T-Bar for Trench</h1>
+                  <div class="meta">
+                    <span><i class="bi bi-check-circle"></i> Durable Load-Bearing Profile</span>
+                    <span><i class="bi bi-check-circle"></i> Pedestrian &amp; Vehicular Rated</span>
+                  </div>
+                  <p class="description">A rugged T-bar profile built for trench drainage systems, providing dependable structural support across pedestrian and vehicular trench applications.</p>
+                  <a href="#product-range" class="read-more"><span>View Details</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+</div>
+</div>
+</div>
+            
+	</Section>
+	
+	
+	
+	
+	     
+	
+    <!-- Latest Posts Section -->
+    <section id="latest-posts" class="latest-posts section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Industries We Serve</span>
+        <h2>Industries We Serve</h2>
+       
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-stretch">
+
+          
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <article class="card-post h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/Products-slide/01.png" class="img-fluid w-100" alt="Precast concrete products">
+              </div>
+              <div class="content">
+                
+                <h3 class="title">Precast Concrete Products</h3>
+                <a href="#product-range" class="readmore"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div><!-- End Grid Post -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
+            <article class="card-post h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/Products-slide/05.png" class="img-fluid w-100" alt="Manhole and drainage products">
+              </div>
+              <div class="content">
+               
+                <h3 class="title">Manhole &amp; Drainage Systems</h3>
+                <a href="#product-range" class="readmore"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div><!-- End Grid Post -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <article class="card-post h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/Products-slide/09.png" class="img-fluid w-100" alt="Underground utility products">
+              </div>
+              <div class="content">
+               
+                <h3 class="title">Underground Chamber Products</h3>
+                <a href="#product-range" class="readmore"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div><!-- End Grid Post -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Latest Posts Section -->
+	
+	<!-- About Section -->
+    <section id="about" class="about section hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+ <div class="hero-content">
+        <div class="row g-5 align-items-center">
+		
+          <div class="col-lg-6 position-relative">
+            <div class="about-img" data-aos="fade-right">
+              <img src="assets/img/about/about.jpg" style="height:500px; width:650px;" alt="">
+            </div>
+            
+            <div class="projects-badge" data-aos="fade-left">
+                 <h2>2015</h2>
+              <p>Established in </p>
+            </div>
+          </div>
+
+          
+		  <div class="col-lg-6 hero-text" data-aos="fade-left">
+		   <h2><span class="accent-text">About Us</span></h2>
+              <p class="description">Magma Supply, Established in 2015, is a premier manufacturer specializing in a wide range of construction and industrial products. 
+			   We take pride in our extensive expertise and commitment to quality, ensuring that each product under our renowned brand names—Fencefit, Formfit, and Aquafit—meets 
+			   the highest standards of durability, performance, and reliability. Our comprehensive product line encompasses various categories tailored to address the specific 
+			   requirements of different industries. Whether you're in the construction, precast, water works, or traffic control industry, Magma Supply has the perfect solutions 
+			   for you. For robust security and delineation solutions, explore our chain link fence products. Designed to withstand harsh conditions, these products provide 
+			   unparalleled security while maintaining an aesthetic appeal. If you're involved in concrete pouring, our concrete formwork accessories are a must-have. </p>
+			<a href="about.html" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="300">Learn More</a>
+           </div>
+		   </div>
+		   </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+	
+	
+
+	
+	
+<!-- Gallery Slider Section -->
+    <section id="gallery-slider" class="gallery-slider section">
+  <!-- Section Title -->
+ 
+      <div class="container section-title" data-aos="fade-up">
+	    <span class="description-title">Products We Offer</span>
+        <h2>Products We Offer</h2>
+        
+		</div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="gallery-container">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": {
+                  "delay": 4000
+                },
+                "effect": "coverflow",
+                "grabCursor": true,
+                "centeredSlides": true,
+                "slidesPerView": "auto",
+                "coverflowEffect": {
+                  "rotate": 50,
+                  "stretch": 0,
+                  "depth": 100,
+                  "modifier": 1,
+                  "slideShadows": true
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 10
+                  },
+                  "768": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 20
+                  },
+                  "1024": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 30
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/01.png">
+                      <img src="assets/img/Products-slide/01.png" class="img-fluid" alt="Concrete Precast Joint Mold Ring">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Concrete Precast Joint Mold Ring</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/02.png">
+                      <img src="assets/img/Products-slide/02.png" class="img-fluid" alt="TMT Frames/Rings">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">TMT Frames/Rings</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/03.png" >
+                      <img src="assets/img/Products-slide/03.png" class="img-fluid" alt="Concrete Reinforcement Wire &amp; Mesh">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Concrete Reinforcement Wire &amp; Mesh</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/04.png">
+                      <img src="assets/img/Products-slide/04.png" class="img-fluid" alt="Lid Handle">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Lid Handle</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/05.png">
+                      <img src="assets/img/Products-slide/05.png" class="img-fluid" alt="Manhole Ladder Rung">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Manhole Ladder Rung</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/06.png">
+                      <img src="assets/img/Products-slide/06.png" class="img-fluid" alt="Manhole Ladder Rung Setting Pin">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Manhole Ladder Rung Setting Pin</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/07.png">
+                      <img src="assets/img/Products-slide/07.png" class="img-fluid" alt="Jacket Lock Assembly Complete">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Jacket Lock Assembly Complete</p>
+                </div>
+              </div>
+			  <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/08.png">
+                      <img src="assets/img/Products-slide/08.png" class="img-fluid" alt="Drainage Wall Head Grill &amp; Railing">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Drainage Wall Head Grill &amp; Railing</p>
+                </div>
+              </div>
+			  <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/09.png">
+                      <img src="assets/img/Products-slide/09.png" class="img-fluid" alt="Underground Chamber Vault Covers">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">Underground Chamber Vault Covers</p>
+                </div>
+              </div>
+			  <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/Products-slide/10.png">
+                      <img src="assets/img/Products-slide/10.png" class="img-fluid" alt="T-Bar for Trench">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="gallery-caption">T-Bar for Trench</p>
+                </div>
+              </div>
+			 
+			 
+            </div>
+         
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Slider Section -->
+
+    <!-- Products We Offer - Slider Option 2 (Card Slider) -->
+    <section id="product-cards-slider" class="product-cards-slider section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Product Showcase</span>
+        <h2>Products We Offer</h2>
+        <p>A second slider style for browsing our range — card-based, with product codes and categories shown on each slide.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper product-cards-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 700,
+              "autoplay": {
+                "delay": 3500
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 24,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".product-cards-slider .swiper-button-next",
+                "prevEl": ".product-cards-slider .swiper-button-prev"
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 16
+                },
+                "576": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "992": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 24
+                },
+                "1200": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 24
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC201-210</span>
+                  <img src="assets/img/Products-slide/01.png" class="img-fluid" alt="Concrete Precast Joint Mold Ring">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Precast Concrete Products</span>
+                  <h3 class="product-title">Concrete Precast Joint Mold Ring</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC-220</span>
+                  <img src="assets/img/Products-slide/02.png" class="img-fluid" alt="TMT Frames/Rings">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Precast Concrete Products</span>
+                  <h3 class="product-title">TMT Frames/Rings</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">321-339</span>
+                  <img src="assets/img/Products-slide/03.png" class="img-fluid" alt="Concrete Reinforcement Wire &amp; Mesh">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Reinforcement Products</span>
+                  <h3 class="product-title">Concrete Reinforcement Wire &amp; Mesh</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC-330</span>
+                  <img src="assets/img/Products-slide/04.png" class="img-fluid" alt="Lid Handle">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Manhole &amp; Access Covers</span>
+                  <h3 class="product-title">Lid Handle</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC390</span>
+                  <img src="assets/img/Products-slide/05.png" class="img-fluid" alt="Manhole Ladder Rung">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Manhole &amp; Access Covers</span>
+                  <h3 class="product-title">Manhole Ladder Rung</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC398</span>
+                  <img src="assets/img/Products-slide/06.png" class="img-fluid" alt="Manhole Ladder Rung Setting Pin">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Manhole &amp; Access Covers</span>
+                  <h3 class="product-title">Manhole Ladder Rung Setting Pin</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC-410</span>
+                  <img src="assets/img/Products-slide/07.png" class="img-fluid" alt="Jacket Lock Assembly Complete">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Underground Utility Products</span>
+                  <h3 class="product-title">Jacket Lock Assembly Complete</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC-450</span>
+                  <img src="assets/img/Products-slide/08.png" class="img-fluid" alt="Drainage Wall Head Grill &amp; Railing">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Drainage Systems</span>
+                  <h3 class="product-title">Drainage Wall Head Grill &amp; Railing</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC-470</span>
+                  <img src="assets/img/Products-slide/09.png" class="img-fluid" alt="Underground Chamber Vault Covers">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Underground Chamber Products</span>
+                  <h3 class="product-title">Underground Chamber Vault Covers</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-slide-card">
+                <div class="product-slide-img">
+                  <span class="product-code-badge">MPC-480</span>
+                  <img src="assets/img/Products-slide/10.png" class="img-fluid" alt="T-Bar for Trench">
+                </div>
+                <div class="product-slide-body">
+                  <span class="product-category">Drainage Systems</span>
+                  <h3 class="product-title">T-Bar for Trench</h3>
+                  <a href="#product-range" class="view-link">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+    </section><!-- /Products We Offer - Slider Option 2 -->
+
+    <!-- Products Range Section -->
+    <section id="product-range" class="products-range section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Our Products</span>
+        <h2>Our Product Range</h2>
+        <p>Browse our full range of products, or use the search bar above to find a product by name or code number.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4" id="product-grid">
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Concrete Precast Joint Mold Ring" data-code="MPC201-210">
+              <div class="product-img">
+                <span class="product-code-badge">MPC201-210</span>
+                <img src="assets/img/Products-slide/01.png" class="img-fluid" alt="Concrete Precast Joint Mold Ring">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Precast Concrete Products</span>
+                <h3 class="product-title">Concrete Precast Joint Mold Ring</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="TMT Frames/Rings" data-code="MPC-220">
+              <div class="product-img">
+                <span class="product-code-badge">MPC-220</span>
+                <img src="assets/img/Products-slide/02.png" class="img-fluid" alt="TMT Frames/Rings">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Precast Concrete Products</span>
+                <h3 class="product-title">TMT Frames/Rings</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Concrete Reinforcement Wire &amp; Mesh" data-code="321-339">
+              <div class="product-img">
+                <span class="product-code-badge">321-339</span>
+                <img src="assets/img/Products-slide/03.png" class="img-fluid" alt="Concrete Reinforcement Wire &amp; Mesh">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Reinforcement Products</span>
+                <h3 class="product-title">Concrete Reinforcement Wire &amp; Mesh</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Lid Handle" data-code="MPC-330">
+              <div class="product-img">
+                <span class="product-code-badge">MPC-330</span>
+                <img src="assets/img/Products-slide/04.png" class="img-fluid" alt="Lid Handle">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Manhole &amp; Access Covers</span>
+                <h3 class="product-title">Lid Handle</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Manhole Ladder Rung" data-code="MPC390">
+              <div class="product-img">
+                <span class="product-code-badge">MPC390</span>
+                <img src="assets/img/Products-slide/05.png" class="img-fluid" alt="Manhole Ladder Rung">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Manhole &amp; Access Covers</span>
+                <h3 class="product-title">Manhole Ladder Rung</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Manhole Ladder Rung Setting Pin" data-code="MPC398">
+              <div class="product-img">
+                <span class="product-code-badge">MPC398</span>
+                <img src="assets/img/Products-slide/06.png" class="img-fluid" alt="Manhole Ladder Rung Setting Pin">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Manhole &amp; Access Covers</span>
+                <h3 class="product-title">Manhole Ladder Rung Setting Pin</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Jacket Lock Assembly Complete" data-code="MPC-410">
+              <div class="product-img">
+                <span class="product-code-badge">MPC-410</span>
+                <img src="assets/img/Products-slide/07.png" class="img-fluid" alt="Jacket Lock Assembly Complete">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Underground Utility Products</span>
+                <h3 class="product-title">Jacket Lock Assembly Complete</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Drainage Wall Head Grill &amp; Railing" data-code="MPC-450">
+              <div class="product-img">
+                <span class="product-code-badge">MPC-450</span>
+                <img src="assets/img/Products-slide/08.png" class="img-fluid" alt="Drainage Wall Head Grill &amp; Railing">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Drainage Systems</span>
+                <h3 class="product-title">Drainage Wall Head Grill &amp; Railing</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="Underground Chamber Vault Covers" data-code="MPC-470">
+              <div class="product-img">
+                <span class="product-code-badge">MPC-470</span>
+                <img src="assets/img/Products-slide/09.png" class="img-fluid" alt="Underground Chamber Vault Covers">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Underground Chamber Products</span>
+                <h3 class="product-title">Underground Chamber Vault Covers</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 product-col">
+            <div class="product-card" data-name="T-Bar for Trench" data-code="MPC-480">
+              <div class="product-img">
+                <span class="product-code-badge">MPC-480</span>
+                <img src="assets/img/Products-slide/10.png" class="img-fluid" alt="T-Bar for Trench">
+              </div>
+              <div class="product-body">
+                <span class="product-category">Drainage Systems</span>
+                <h3 class="product-title">T-Bar for Trench</h3>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- End Product Grid -->
+
+        <p id="product-no-results" class="product-no-results">No products found matching your search. Try a different name or code number.</p>
+
+      </div>
+
+    </section><!-- /Products Range Section -->
+
+ 
+	
+	
+	
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <a href="index.html" class="logo d-flex align-items-center mb-3">
+              <img src="assets/img/logo/logo-footer.png" alt="" style="width: 220px;"> 
+              </a>
+              <div class="social-links mt-4">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=919356383393" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#product-range">Our Products</a></li>
+                <li><a href="#gallery-slider">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h5>Our Products</h5>
+              <ul class="list-unstyled">
+                <li><a href="#product-range" data-filter="Concrete Precast Joint Mold Ring">Concrete Precast Joint Mold Ring</a></li>
+                <li><a href="#product-range" data-filter="TMT Frames/Rings">TMT Frames/Rings</a></li>
+                <li><a href="#product-range" data-filter="Concrete Reinforcement Wire &amp; Mesh">Concrete Reinforcement Wire &amp; Mesh</a></li>
+                <li><a href="#product-range" data-filter="Manhole Ladder Rung">Manhole Ladder Rung</a></li>
+                <li><a href="#product-range" data-filter="Underground Chamber Vault Covers">Underground Chamber Vault Covers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h5>Get In Touch</h5>
+              <ul class="footer-contact-list list-unstyled">
+                <li>
+                  <span class="icon"><i class="bi bi-telephone"></i></span>
+                  <a href="tel:+17789293020">+1 (778) 929 3020</a>
+                </li>
+                <li>
+                  <span class="icon"><i class="bi bi-envelope"></i></span>
+                  <a href="mailto:info@magmasupply.com">info@magmasupply.com</a>
+                </li>
+                <li>
+                  <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                  <a href="https://api.whatsapp.com/send?phone=7789293020">Chat on WhatsApp</a>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline footer-cta-btn mt-2">Get in Touch</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p class="mb-0">© <strong>Magma-Precon</strong>. All rights reserved.</p>
+          <ul class="footer-legal-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+          <div class="credits">
+            Designed by <a href="https://rcmasoun.github.io/Rupali_portfolio/">RV Infotech</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Product Search -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var searchBar = document.getElementById('nav-search-full');
+      var searchInput = document.getElementById('nav-search-input');
+      var searchSubmit = document.getElementById('nav-search-submit');
+      var searchClose = document.getElementById('nav-search-close');
+      var productCards = document.querySelectorAll('.product-card');
+      var noResults = document.getElementById('product-no-results');
+      var productSection = document.getElementById('product-range');
+
+      function filterProducts(term) {
+        term = term.trim().toLowerCase();
+        var visibleCount = 0;
+        productCards.forEach(function (card) {
+          var name = (card.getAttribute('data-name') || '').toLowerCase();
+          var code = (card.getAttribute('data-code') || '').toLowerCase();
+          var match = term === '' || name.indexOf(term) !== -1 || code.indexOf(term) !== -1;
+          var col = card.closest('.product-col');
+          if (col) col.style.display = match ? '' : 'none';
+          if (match) visibleCount++;
+        });
+        if (noResults) {
+          noResults.style.display = (visibleCount === 0 && term !== '') ? 'block' : 'none';
+        }
+        if (searchBar) {
+          searchBar.classList.toggle('has-value', term !== '');
+        }
+      }
+
+      function goToResults() {
+        if (productSection) {
+          productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      if (searchClose) {
+        searchClose.addEventListener('click', function (e) {
+          e.preventDefault();
+          searchInput.value = '';
+          filterProducts('');
+          searchInput.focus();
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function () {
+          filterProducts(this.value);
+        });
+
+        searchInput.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            filterProducts(this.value);
+            goToResults();
+          }
+        });
+      }
+
+      if (searchSubmit) {
+        searchSubmit.addEventListener('click', function (e) {
+          e.preventDefault();
+          filterProducts(searchInput.value);
+          goToResults();
+        });
+      }
+
+      // Product links in the nav dropdown / footer jump straight to a filtered result
+      document.querySelectorAll('a[data-filter]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var term = link.getAttribute('data-filter') || '';
+          if (searchInput) searchInput.value = term;
+          filterProducts(term);
+          goToResults();
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
